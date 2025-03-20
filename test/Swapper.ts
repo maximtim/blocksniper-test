@@ -29,8 +29,6 @@ describe("Swapper", function () {
     const amountOut = ethers.parseEther('1000');
     const amountIn = await swapper.getTask1AmountIn(amountOut, BSCUSDaddr);
 
-    console.log(ethers.parseEther(amountIn.toString()));
-
     const tx = swapper.task1Swap(
       amountOut,
       BSCUSDaddr,

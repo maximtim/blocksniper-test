@@ -1,11 +1,8 @@
 // SPDX-License-Identifier: UNLICENSED
 pragma solidity ^0.8.28;
 
-// Uncomment this line to use console.log
-import "hardhat/console.sol";
-
 import '@uniswap/lib/contracts/libraries/TransferHelper.sol';
-import './PancakeLibrary.sol';
+import './interfaces/IPancakePair.sol';
 import './interfaces/IWETH.sol';
 
 contract Swapper {
